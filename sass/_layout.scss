@@ -17,7 +17,24 @@
     height: auto;
     max-width: 100%;
     flex-direction: column;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
+    animation: moveInLeft 1s;
+
+    @keyframes moveInLeft{
+        0%{
+            opacity:0;
+            transform:translateX(-100px)
+        }
+    
+        80%{
+            transform: translateX(10px);
+        }
+    
+        100%{
+            opacity:1;
+            transform: translate(0);
+        }
+    }
 }
 
 .header-style2{
@@ -26,7 +43,8 @@
     align-items: center;
     height: auto;
     max-width: 100%;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.219);
 }
 
 .content{
