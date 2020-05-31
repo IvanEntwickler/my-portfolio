@@ -1,0 +1,58 @@
+:root{
+    --color-one: rgb(84, 174, 247);
+    --color-one-light:rgb(149, 203, 247);
+    --color-one-dark:rgb(8, 131, 231);
+
+    --color-grey-light-1: #f7f2f2;
+    --color-grey-light-2: #b6b4b4;
+    --color-grey-light-3: #b1b0b0;
+    --color-grey-light-4: rgb(165, 164, 164);
+
+    --color-grey-dark-1: rgb(37, 37, 37);
+    --color-grey-dark-2: rgb(112, 112, 112);
+    --color-grey-dark-3: rgb(170, 169, 169);
+    --shadow-box:0 2rem 6rem rgba(0,0,0,.3);
+
+    --backgroundColor-1:#b9c9f0;
+    --backgroundColor-2:#edf5f1;
+
+    --backgroundColor-3:rgba(185, 201, 240, 0);
+    --backgroundColor-4:rgba(237, 245, 241, 0);
+}
+
+$bp-largest2: 75em; // = 1200px
+$bp-largest: 68.75em; // = 1100 px
+$bp-medium: 52.875em; // = 846 px
+$bp-small: 45.5em; // = 728 px
+$bp-smaller:33.75em; // = 539px
+$bp-smallest:21.875em; // = 350px
+
+*{
+    margin:0;
+    padding:0;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing:border-box;
+    font-size: 62.5;
+}
+
+body{
+    font-style: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height:1.6;
+    color:var(--color-grey-dark-1);
+    background: linear-gradient(-90deg,
+    var(--backgroundColor-1),
+    var(--backgroundColor-2));
+    background-size:cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    
+}
