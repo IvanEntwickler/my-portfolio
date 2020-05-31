@@ -8,8 +8,8 @@
     "devserver": "live-server",
     "start": "npm-run-all --parallel devserver watch:sass",
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
-    "compress:css": "node-sass style.css --output-style compressed",
-    "build:css": "npm-run-all compile:sass compress:style.css"
+    "compress:css": "node-sass css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass compress:css"
   },
   "author": "Ivan",
   "license": "ISC",
